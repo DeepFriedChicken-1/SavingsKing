@@ -63,26 +63,33 @@ header{
 }
 main{
     width: 100vw;
-    height: 100%;
+    height: max-content;
 }
 #hero{
     height: 70vh;
-    width: 100vw;
+    width: 90rem;
     display: flex;
     flex-direction: row;
     padding: 2rem;
+    background-color: var(--text-color);
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem var(--highlight-col-3);
 }
 #hero *{
     width: 100%;
     height: auto;
     margin: 2rem;
+    border-radius: 1rem;
 }
 #hero-banner{
-    color: var(--text-color);
-    font-size: 10vh;
+    color: var(--bg-color);
+    font-size: 7vh;
 }
 #hero-banner>:last-child{
     color: var(--highlight-col-2);
+    text-shadow: 0.1rem 0.1rem 0.1rem var(--bg-color);
+    font-size: 8vh;
 }
 #button-container{
     padding: 4rem;
@@ -94,4 +101,21 @@ main{
     border-radius: 1rem;
     background-color: var(--highlight-col-1);
     color: var(--highlight-col-2);
+}
+#tiles{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    width: 90rem;
+    height: 60vh;
+    margin: 2rem;
+    background-color: var(--highlight-col-1);
+    box-shadow: 0.4rem 0.4rem 0.4rem var(--highlight-col-3);
+    padding: 3rem;
+    border-radius: 1rem;
+}
+.tile{
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem black;
 }
